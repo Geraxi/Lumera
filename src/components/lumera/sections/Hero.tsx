@@ -1,6 +1,5 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-import logo from "@/assets/lumera-logo.png";
 import estimate from "@/assets/screens/estimate.png";
 import plan from "@/assets/screens/plan.png";
 import { IPhoneMockup } from "../IPhoneMockup";
@@ -27,62 +26,11 @@ export function Hero() {
           <span className="eyebrow !mb-0 !tracking-[0.28em]">iOS · Skincare Wellness</span>
         </motion.div>
 
-        {/* Logo as centerpiece — splash phone flanked by side phones */}
-        <div className="relative mt-12 flex w-full items-center justify-center">
-          <motion.div
-            initial={{ opacity: 0, x: 80, rotate: 0 }}
-            animate={{ opacity: 1, x: 0, rotate: -10 }}
-            transition={{ duration: 1.1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute z-10 hidden md:block"
-            style={{ left: "calc(50% - 320px)" }}
-          >
-            <IPhoneMockup
-              src={estimate}
-              alt="Lumera skin estimate screen showing analysis areas"
-              size="md"
-              glow={false}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.85 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="relative z-20 flex items-center justify-center"
-          >
-            <div
-              aria-hidden
-              className="absolute inset-0 -z-10 scale-150 bg-radial-glow opacity-90 blur-3xl animate-gold-pulse"
-            />
-            <img
-              src={logo}
-              alt="Lumera logo — a luminous golden eclipse"
-              className="h-auto w-[280px] select-none sm:w-[360px] md:w-[460px] lg:w-[520px] drop-shadow-[0_0_60px_color-mix(in_oklab,var(--gold)_55%,transparent)]"
-              draggable={false}
-            />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: -80, rotate: 0 }}
-            animate={{ opacity: 1, x: 0, rotate: 10 }}
-            transition={{ duration: 1.1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute z-10 hidden md:block"
-            style={{ right: "calc(50% - 320px)" }}
-          >
-            <IPhoneMockup
-              src={plan}
-              alt="Lumera personalized plan screen"
-              size="md"
-              glow={false}
-            />
-          </motion.div>
-        </div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-4 font-display text-5xl font-light leading-[0.98] text-pearl sm:text-6xl md:text-7xl"
+          transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-8 font-display text-5xl font-light leading-[0.98] text-pearl sm:text-6xl md:text-7xl"
         >
           Your Skin
         </motion.h1>
