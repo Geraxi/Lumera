@@ -31,7 +31,7 @@ export function Header() {
             src={logo}
             alt=""
             aria-hidden
-            className="h-9 w-9 object-contain mix-blend-screen opacity-90 [filter:drop-shadow(0_0_8px_color-mix(in_oklab,var(--gold)_45%,transparent))]"
+            className="h-9 w-9 object-contain [filter:drop-shadow(0_0_10px_color-mix(in_oklab,var(--gold)_55%,transparent))]"
           />
           LUMERA
         </Link>
