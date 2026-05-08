@@ -1,6 +1,6 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-import splash from "@/assets/screens/splash.png";
+import logo from "@/assets/lumera-logo.png";
 import estimate from "@/assets/screens/estimate.png";
 import plan from "@/assets/screens/plan.png";
 import { IPhoneMockup } from "../IPhoneMockup";
