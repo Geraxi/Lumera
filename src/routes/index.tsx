@@ -2,12 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/lumera/Header";
 import { Footer } from "@/components/lumera/Footer";
 import { Hero } from "@/components/lumera/sections/Hero";
-import { TrustStrip } from "@/components/lumera/sections/TrustStrip";
-import { Features } from "@/components/lumera/sections/Features";
 import { ScanSection } from "@/components/lumera/sections/ScanSection";
-import { Workflow } from "@/components/lumera/sections/Workflow";
-import { Gallery } from "@/components/lumera/sections/Gallery";
-import { Safety } from "@/components/lumera/sections/Safety";
 import { WaitlistCTA } from "@/components/lumera/sections/WaitlistCTA";
 
 export const Route = createFileRoute("/")({
