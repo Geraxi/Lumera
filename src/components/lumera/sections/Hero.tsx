@@ -28,7 +28,7 @@ export function Hero() {
         </motion.div>
 
         {/* Logo as centerpiece — splash phone flanked by side phones */}
-        <div className="relative mt-12 flex h-[520px] w-full items-center justify-center md:h-[620px]">
+        <div className="relative mt-12 flex w-full items-center justify-center">
           <motion.div
             initial={{ opacity: 0, x: 80, rotate: 0 }}
             animate={{ opacity: 1, x: 0, rotate: -10 }}
