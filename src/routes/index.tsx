@@ -33,12 +33,7 @@ function Index() {
       <Header />
       <main>
         <Hero />
-        <TrustStrip />
-        <Features />
         <ScanSection />
-        <Workflow />
-        <Gallery />
-        <Safety />
         <WaitlistCTA source="landing" />
       </main>
       <Footer />
