@@ -2,6 +2,10 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { GoldButton } from "../GoldButton";
 import { GoldGlow } from "../GoldGlow";
+import { IPhoneMockup } from "../IPhoneMockup";
+import estimate from "@/assets/screens/estimate.png";
+import splash from "@/assets/screens/splash.png";
+import plan from "@/assets/screens/plan.png";
 
 export function Hero() {
   return (
@@ -61,6 +65,34 @@ export function Hero() {
         <p className="mt-6 text-xs uppercase tracking-[0.28em] text-muted-foreground/70">
           Launching soon on iOS · Wellness, not diagnosis
         </p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.95, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-16 flex w-full items-end justify-center gap-4 md:gap-8"
+        >
+          <IPhoneMockup
+            src={estimate}
+            alt="Lumera estimate screen"
+            size="sm"
+            rotate={-8}
+            className="hidden md:block -mr-6 mb-10"
+          />
+          <IPhoneMockup
+            src={splash}
+            alt="Lumera splash screen"
+            size="md"
+            className="z-10"
+          />
+          <IPhoneMockup
+            src={plan}
+            alt="Lumera plan screen"
+            size="sm"
+            rotate={8}
+            className="hidden md:block -ml-6 mb-10"
+          />
+        </motion.div>
       </div>
     </section>
   );
