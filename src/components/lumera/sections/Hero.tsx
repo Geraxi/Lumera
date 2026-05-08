@@ -79,10 +79,7 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="mt-4 font-display text-5xl font-light leading-[0.98] text-pearl sm:text-6xl md:text-7xl"
         >
-          Your Skin,{" "}
-          <span className="bg-gradient-gold bg-clip-text text-transparent">
-            Understood.
-          </span>
+          Your Skin
         </motion.h1>
 
         <motion.p
