@@ -33,14 +33,18 @@ export function Header() {
           >
             <defs>
               <radialGradient id="lumera-corona" cx="50%" cy="50%" r="50%">
-                <stop offset="42%" stopColor="#000" stopOpacity="0" />
+                <stop offset="42%" stopColor="var(--gold)" stopOpacity="0" />
                 <stop offset="48%" stopColor="var(--gold)" stopOpacity="0.95" />
                 <stop offset="55%" stopColor="var(--gold)" stopOpacity="0.55" />
                 <stop offset="80%" stopColor="var(--gold)" stopOpacity="0" />
               </radialGradient>
+              <radialGradient id="lumera-disk" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stopColor="color-mix(in oklab, var(--gold) 90%, white)" />
+                <stop offset="100%" stopColor="var(--gold)" />
+              </radialGradient>
             </defs>
             <circle cx="32" cy="32" r="30" fill="url(#lumera-corona)" />
-            <circle cx="32" cy="32" r="14" fill="#000" />
+            <circle cx="32" cy="32" r="14" fill="url(#lumera-disk)" />
           </svg>
           LUMERA
         </Link>
