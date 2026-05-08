@@ -25,9 +25,7 @@ export function Hero() {
             <span className="eyebrow !mb-0 !tracking-[0.28em]">iOS · Skincare Wellness</span>
           </div>
           <h1 className="mt-7 font-display text-5xl font-light leading-[0.98] text-pearl sm:text-6xl md:text-7xl lg:text-[5.5rem]">
-            Your Skin,
-            <br />
-            <span className="bg-gradient-gold bg-clip-text text-transparent">Understood.</span>
+            Your Skin
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-foreground">
             Lumera helps you build consistent skincare, hydration, nutrition, and
