@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/lumera-logo.png";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -27,12 +26,22 @@ export function Header() {
           to="/"
           className="flex items-center gap-2.5 font-display text-xl font-medium tracking-[0.3em] text-gold"
         >
-          <img
-            src={logo}
-            alt=""
+          <svg
+            viewBox="0 0 64 64"
+            className="h-8 w-8"
             aria-hidden
-            className="h-9 w-9 object-contain [filter:drop-shadow(0_0_10px_color-mix(in_oklab,var(--gold)_55%,transparent))]"
-          />
+          >
+            <defs>
+              <radialGradient id="lumera-corona" cx="50%" cy="50%" r="50%">
+                <stop offset="42%" stopColor="#000" stopOpacity="0" />
+                <stop offset="48%" stopColor="var(--gold)" stopOpacity="0.95" />
+                <stop offset="55%" stopColor="var(--gold)" stopOpacity="0.55" />
+                <stop offset="80%" stopColor="var(--gold)" stopOpacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="32" cy="32" r="30" fill="url(#lumera-corona)" />
+            <circle cx="32" cy="32" r="14" fill="#000" />
+          </svg>
           LUMERA
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
