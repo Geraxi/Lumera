@@ -27,7 +27,12 @@ export function Header() {
           to="/"
           className="flex items-center gap-2.5 font-display text-xl font-medium tracking-[0.3em] text-gold"
         >
-          <img src={logo} alt="" aria-hidden className="h-8 w-8 object-contain" />
+          <img
+            src={logo}
+            alt=""
+            aria-hidden
+            className="h-9 w-9 object-contain mix-blend-screen opacity-90 [filter:drop-shadow(0_0_8px_color-mix(in_oklab,var(--gold)_45%,transparent))]"
+          />
           LUMERA
         </Link>
         <nav className="hidden items-center gap-8 md:flex">
