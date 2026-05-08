@@ -22,10 +22,11 @@ export function Hero() {
         src={sun}
         alt=""
         aria-hidden
-        initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 0.55, y: 0 }}
+        initial={{ opacity: 0, y: 80 }}
+        animate={{ opacity: 0.7, y: 0 }}
         transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
-        className="pointer-events-none absolute left-1/2 -bottom-[55%] -z-10 w-[160%] max-w-none -translate-x-1/2 select-none md:-bottom-[65%] md:w-[120%]"
+        className="pointer-events-none absolute left-1/2 bottom-0 z-0 w-[180%] max-w-none -translate-x-1/2 translate-y-[55%] select-none md:w-[130%] md:translate-y-[50%]"
+        style={{ mixBlendMode: "screen" }}
       />
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center px-6 text-center">
