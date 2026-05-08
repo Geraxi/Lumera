@@ -25,7 +25,7 @@ export function Hero() {
         initial={{ opacity: 0, y: 80 }}
         animate={{ opacity: 0.7, y: 0 }}
         transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
-        className="pointer-events-none absolute left-1/2 bottom-0 z-0 w-[180%] max-w-none -translate-x-1/2 translate-y-[55%] select-none md:w-[130%] md:translate-y-[50%]"
+        className="pointer-events-none absolute left-1/2 bottom-0 z-0 w-[180%] max-w-none -translate-x-1/2 translate-y-[15%] select-none md:w-[130%] md:translate-y-[10%]"
         style={{ mixBlendMode: "screen" }}
       />
 
