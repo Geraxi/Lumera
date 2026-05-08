@@ -6,6 +6,7 @@ import { IPhoneMockup } from "../IPhoneMockup";
 import estimate from "@/assets/screens/estimate.png";
 import splash from "@/assets/screens/splash.png";
 import plan from "@/assets/screens/plan.png";
+import sun from "@/assets/sun.png";
 
 export function Hero() {
   return (
@@ -15,6 +16,17 @@ export function Hero() {
         intensity="strong"
       />
       <GoldGlow className="-right-40 top-1/3 h-[500px] w-[500px]" intensity="soft" />
+
+      {/* Sun backdrop rising from bottom */}
+      <motion.img
+        src={sun}
+        alt=""
+        aria-hidden
+        initial={{ opacity: 0, y: 60 }}
+        animate={{ opacity: 0.55, y: 0 }}
+        transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
+        className="pointer-events-none absolute left-1/2 -bottom-[55%] -z-10 w-[160%] max-w-none -translate-x-1/2 select-none md:-bottom-[65%] md:w-[120%]"
+      />
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center px-6 text-center">
         <motion.div
