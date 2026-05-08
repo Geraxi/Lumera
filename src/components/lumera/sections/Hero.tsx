@@ -2,6 +2,10 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { GoldButton } from "../GoldButton";
 import { GoldGlow } from "../GoldGlow";
+import { IPhoneMockup } from "../IPhoneMockup";
+import estimate from "@/assets/screens/estimate.png";
+import splash from "@/assets/screens/splash.png";
+import plan from "@/assets/screens/plan.png";
 
 export function Hero() {
   return (
