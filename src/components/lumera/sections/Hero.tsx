@@ -45,15 +45,20 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.92, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="relative z-20"
+            initial={{ opacity: 0, scale: 0.85 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+            className="relative z-20 flex items-center justify-center"
           >
-            <IPhoneMockup
-              src={splash}
-              alt="Lumera app logo on the splash screen with warm gold glow"
-              size="lg"
+            <div
+              aria-hidden
+              className="absolute inset-0 -z-10 scale-150 bg-radial-glow opacity-90 blur-3xl animate-gold-pulse"
+            />
+            <img
+              src={logo}
+              alt="Lumera logo — a luminous golden eclipse"
+              className="h-auto w-[280px] select-none sm:w-[360px] md:w-[460px] lg:w-[520px] drop-shadow-[0_0_60px_color-mix(in_oklab,var(--gold)_55%,transparent)]"
+              draggable={false}
             />
           </motion.div>
 
