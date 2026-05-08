@@ -1,8 +1,5 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-import estimate from "@/assets/screens/estimate.png";
-import plan from "@/assets/screens/plan.png";
-import { IPhoneMockup } from "../IPhoneMockup";
 import { GoldButton } from "../GoldButton";
 import { GoldGlow } from "../GoldGlow";
 
