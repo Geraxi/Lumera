@@ -24,7 +24,7 @@ export function ScanSection() {
             <IPhoneMockup
               src={estimate}
               alt="Lumera skin estimate screen with pimples, texture, moles, redness, scars, and hydration regions"
-              size="xl"
+              size="md"
             />
           </div>
         </Reveal>
