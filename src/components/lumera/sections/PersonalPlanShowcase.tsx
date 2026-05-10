@@ -12,22 +12,22 @@ const items = [
     src: products,
     alt: "Lumera personal plan products tab with curated cleansers, serums, and moisturizers",
     eyebrow: "Your Personal Plan",
-    title: "Products picked for your routine.",
-    body: "A curated shortlist by category — cleanser, serum, moisturizer — with prices and quick saves, so you spend less time guessing at the shelf.",
+    title: "Products picked for you.",
+    body: "A curated shortlist by category, with prices and quick saves — less guessing at the shelf.",
   },
   {
     src: moleAnalysis,
-    alt: "Lumera mole analysis screen with face map, tracked moles list, and risk indicators",
+    alt: "Lumera mole analysis screen with face map and tracked moles",
     eyebrow: "Mole Analysis",
     title: "Map and monitor what matters.",
-    body: "Track moles over time on a face map, log size and location, and get clear reminders for when it's worth seeing a doctor.",
+    body: "Track moles on a face map, log size and location, and get clear reminders for when to see a doctor.",
   },
   {
     src: progressV2,
-    alt: "Lumera progress page showing latest scan, breakouts, redness, texture metrics and timeline entries",
+    alt: "Lumera progress page with latest scan and timeline",
     eyebrow: "Progress",
     title: "Every scan, side by side.",
-    body: "Front, left, and right captures with breakouts, redness, and texture deltas — plus a timeline of milestones tied to your routine streaks.",
+    body: "Front, left, and right captures with breakouts, redness, and texture deltas tied to your routine streaks.",
   },
 ];
 
@@ -39,37 +39,29 @@ export function PersonalPlanShowcase() {
         intensity="soft"
       />
 
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-7xl px-6">
         <Reveal>
           <SectionHeading
             eyebrow="More inside Lumera"
             title="Personal plan, mole tracking, visible progress."
-            subtitle="Three more pieces of the daily routine — designed to feel calm, specific, and yours."
+            subtitle="Three more pieces of the daily routine — calm, specific, and yours."
           />
         </Reveal>
 
-        <div className="mt-20 space-y-28 md:space-y-36">
+        <div className="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {items.map((item, i) => (
-            <Reveal key={item.title} delay={0.1}>
-              <div
-                className={`flex flex-col items-center gap-12 md:gap-16 ${
-                  i % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"
-                }`}
-              >
-                <div className="flex flex-1 justify-center">
-                  <IPhoneMockup src={item.src} alt={item.alt} size="lg" />
-                </div>
-                <div className="flex-1">
-                  <GlassCard className="p-8 md:p-10">
-                    <p className="eyebrow mb-3">{item.eyebrow}</p>
-                    <h3 className="font-display text-3xl font-light leading-tight text-pearl sm:text-4xl">
-                      {item.title}
-                    </h3>
-                    <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                      {item.body}
-                    </p>
-                  </GlassCard>
-                </div>
+            <Reveal key={item.title} delay={i * 0.1}>
+              <div className="flex flex-col items-center">
+                <IPhoneMockup src={item.src} alt={item.alt} size="md" />
+                <GlassCard className="mt-8 w-full p-6">
+                  <p className="eyebrow mb-2">{item.eyebrow}</p>
+                  <h3 className="font-display text-2xl font-light leading-tight text-pearl">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    {item.body}
+                  </p>
+                </GlassCard>
               </div>
             </Reveal>
           ))}
