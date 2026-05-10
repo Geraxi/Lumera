@@ -12,22 +12,22 @@ const items = [
     src: home,
     alt: "Lumera home dashboard with skin score, today's focus, and weekly streak",
     eyebrow: "Daily Home",
-    title: "A calm starting point, every day.",
-    body: "Greet your routine with a clear skin score, today's focus, and the streak you're building this week.",
+    title: "A calm starting point.",
+    body: "A clear skin score, today's focus, and the streak you're building this week.",
   },
   {
     src: trackOnboarding,
-    alt: "Lumera onboarding screen titled Track. Improve. Maintain. with progress photos and skin score chart",
+    alt: "Lumera onboarding screen titled Track. Improve. Maintain.",
     eyebrow: "Track. Improve. Maintain.",
-    title: "Watch consistency turn into change.",
-    body: "Track your progress, stay consistent, and adjust habits over time — with side-by-side photos and a clear score trend.",
+    title: "Consistency, made visible.",
+    body: "Side-by-side photos and a clear score trend turn small daily habits into change you can see.",
   },
   {
     src: progressDetail,
-    alt: "Lumera progress page with latest scan, breakouts, redness, texture metrics and timeline",
+    alt: "Lumera progress page with latest scan and timeline",
     eyebrow: "Progress",
-    title: "Scan history and visible change.",
-    body: "See breakouts, redness, and texture trend across your latest scans, with milestones marking the routine streaks behind each shift.",
+    title: "Scan history at a glance.",
+    body: "Breakouts, redness, and texture trends across your latest scans, with milestones along the way.",
   },
 ];
 
@@ -39,7 +39,7 @@ export function ProgressShowcase() {
         intensity="soft"
       />
 
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-7xl px-6">
         <Reveal>
           <SectionHeading
             eyebrow="Inside Lumera"
@@ -48,28 +48,20 @@ export function ProgressShowcase() {
           />
         </Reveal>
 
-        <div className="mt-20 space-y-28 md:space-y-36">
+        <div className="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {items.map((item, i) => (
-            <Reveal key={item.title} delay={0.1}>
-              <div
-                className={`flex flex-col items-center gap-12 md:gap-16 ${
-                  i % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"
-                }`}
-              >
-                <div className="flex flex-1 justify-center">
-                  <IPhoneMockup src={item.src} alt={item.alt} size="lg" />
-                </div>
-                <div className="flex-1">
-                  <GlassCard className="p-8 md:p-10">
-                    <p className="eyebrow mb-3">{item.eyebrow}</p>
-                    <h3 className="font-display text-3xl font-light leading-tight text-pearl sm:text-4xl">
-                      {item.title}
-                    </h3>
-                    <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-                      {item.body}
-                    </p>
-                  </GlassCard>
-                </div>
+            <Reveal key={item.title} delay={i * 0.1}>
+              <div className="flex flex-col items-center">
+                <IPhoneMockup src={item.src} alt={item.alt} size="md" />
+                <GlassCard className="mt-8 w-full p-6">
+                  <p className="eyebrow mb-2">{item.eyebrow}</p>
+                  <h3 className="font-display text-2xl font-light leading-tight text-pearl">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                    {item.body}
+                  </p>
+                </GlassCard>
               </div>
             </Reveal>
           ))}
