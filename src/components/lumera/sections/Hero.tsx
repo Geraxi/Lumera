@@ -26,8 +26,21 @@ export function Hero() {
         animate={{ opacity: 0.7, y: 0 }}
         transition={{ duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
         className="pointer-events-none absolute left-1/2 bottom-0 z-0 w-[180%] max-w-none -translate-x-1/2 translate-y-[15%] select-none md:w-[130%] md:translate-y-[10%]"
-        style={{ mixBlendMode: "screen" }}
+        style={{
+          mixBlendMode: "screen",
+          maskImage:
+            "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 25%, black 55%, rgba(0,0,0,0.5) 85%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.6) 25%, black 55%, rgba(0,0,0,0.5) 85%, transparent 100%)",
+        }}
       />
+
+      {/* Bottom blend into next section */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-48 bg-gradient-to-b from-transparent to-background"
+      />
+
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center px-6 text-center">
         <motion.div
