@@ -4,6 +4,7 @@ import { Footer } from "@/components/lumera/Footer";
 import { Hero } from "@/components/lumera/sections/Hero";
 import { ScanSection } from "@/components/lumera/sections/ScanSection";
 import { ProgressShowcase } from "@/components/lumera/sections/ProgressShowcase";
+import { PersonalPlanShowcase } from "@/components/lumera/sections/PersonalPlanShowcase";
 import { WaitlistCTA } from "@/components/lumera/sections/WaitlistCTA";
 
 export const Route = createFileRoute("/")({
@@ -35,6 +36,7 @@ function Index() {
       <main>
         <Hero />
         <ProgressShowcase />
+        <PersonalPlanShowcase />
         <ScanSection />
         <WaitlistCTA source="landing" />
       </main>
