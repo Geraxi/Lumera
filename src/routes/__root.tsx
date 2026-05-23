@@ -82,6 +82,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "Lumera" },
       { name: "theme-color", content: "#1a1208" },
+      { property: "og:title", content: "Lumera — Your Skin, Understood." },
+      { name: "twitter:title", content: "Lumera — Your Skin, Understood." },
+      { name: "description", content: "Skincare coach" },
+      { property: "og:description", content: "Skincare coach" },
+      { name: "twitter:description", content: "Skincare coach" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e91a2ecc-457f-4690-80d5-e746534e06ef/id-preview-7bae81f1--bdee23c4-0c8e-4f88-bf1c-07965a7873a6.lovable.app-1778436800803.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e91a2ecc-457f-4690-80d5-e746534e06ef/id-preview-7bae81f1--bdee23c4-0c8e-4f88-bf1c-07965a7873a6.lovable.app-1778436800803.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
     ],
     links: [
       {
