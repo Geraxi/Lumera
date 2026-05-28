@@ -8,7 +8,6 @@ import { PersonalPlanShowcase } from "@/components/lumera/sections/PersonalPlanS
 import { WaitlistCTA } from "@/components/lumera/sections/WaitlistCTA";
 
 export const Route = createFileRoute("/")({
-export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Lumera — Your Skin, Understood." },
