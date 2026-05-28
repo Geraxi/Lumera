@@ -59,7 +59,7 @@ export function Hero() {
           transition={{ duration: 0.9, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 font-display text-5xl font-light leading-[0.98] text-pearl sm:text-6xl md:text-7xl"
         >
-          Your Skin
+          Lumera — Your Skin, Understood.
         </motion.h1>
 
         <motion.p

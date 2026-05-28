@@ -3,7 +3,6 @@ import { Header } from "@/components/lumera/Header";
 import { Footer } from "@/components/lumera/Footer";
 import { IPhoneMockup } from "@/components/lumera/IPhoneMockup";
 import { Reveal } from "@/components/lumera/Reveal";
-import { SectionHeading } from "@/components/lumera/SectionHeading";
 import { WaitlistCTA } from "@/components/lumera/sections/WaitlistCTA";
 import { GoldGlow } from "@/components/lumera/GoldGlow";
 import { Check } from "lucide-react";
@@ -109,11 +108,15 @@ function FeaturesPage() {
           <GoldGlow className="left-1/2 top-0 h-[600px] w-[800px] -translate-x-1/2" intensity="medium" />
           <div className="mx-auto max-w-4xl px-6">
             <Reveal>
-              <SectionHeading
-                eyebrow="Features"
-                title="Everything Lumera does for your skin."
-                subtitle="A guided, photo-led wellness experience built for daily consistency."
-              />
+              <div className="mx-auto max-w-3xl text-center">
+                <p className="eyebrow mb-4">Features</p>
+                <h1 className="font-display text-balance text-4xl font-light leading-[1.05] text-pearl sm:text-5xl md:text-6xl">
+                  Everything Lumera does for your skin.
+                </h1>
+                <p className="mt-5 text-balance text-base leading-relaxed text-muted-foreground sm:text-lg">
+                  A guided, photo-led wellness experience built for daily consistency.
+                </p>
+              </div>
             </Reveal>
           </div>
         </section>

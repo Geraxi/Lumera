@@ -1,0 +1,8 @@
+# Lumera
+
+> Lumera is a premium iOS skincare wellness companion. It helps people build consistent skincare, hydration, nutrition, and progress habits through personalized, photo-guided wellness insights. Lumera is not a medical device and does not diagnose or treat skin conditions.
+
+## Pages
+
+- [Home](/): Overview of Lumera — personalized routines, photo-guided insights, and progress tracking.
+- [Features](/features): Detailed walkthrough of Lumera's iOS features — Capture, Skin Estimate, Personalized Plan, Progress, Allergies & Sensitivities, and Routine Profile.

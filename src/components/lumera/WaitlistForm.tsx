@@ -71,6 +71,7 @@ export function WaitlistForm({ source = "landing", className }: WaitlistFormProp
       <input
         type="email"
         required
+        aria-label="Email address"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="you@email.com"
