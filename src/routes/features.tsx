@@ -3,7 +3,6 @@ import { Header } from "@/components/lumera/Header";
 import { Footer } from "@/components/lumera/Footer";
 import { IPhoneMockup } from "@/components/lumera/IPhoneMockup";
 import { Reveal } from "@/components/lumera/Reveal";
-import { SectionHeading } from "@/components/lumera/SectionHeading";
 import { WaitlistCTA } from "@/components/lumera/sections/WaitlistCTA";
 import { GoldGlow } from "@/components/lumera/GoldGlow";
 import { Check } from "lucide-react";
